@@ -6,7 +6,7 @@ def main(page: ft.Page):
     #un TextField per visualizzare il valore
     #un tasto + per incrementare
     page.bgcolor = "white"
-    page.vertical_alignment = ft.MainAxisAlignment.CENTER
+    page.vertical_alignment = ft.MainAxisAlignment.CENTER #centra la posizione
     def handleAdd(e):
         txtCounter.value += 1
         page.update()
@@ -22,7 +22,7 @@ def main(page: ft.Page):
                              on_click=handleMinus,
                              bgcolor="green")
     txtCounter = ft.TextField(value = 0,
-                              width = 80,
+                              width = 230,
                               color="green", disabled=True)
     row = ft.Row(controls=[btnMinus, txtCounter, btnAdd],
                  alignment=ft.MainAxisAlignment.CENTER)
